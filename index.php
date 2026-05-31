@@ -24,6 +24,15 @@ function navClass($p, $current) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BoardMate — Boarding House Management</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+.sidebar-nav a i {
+    width: 20px;
+    text-align: center;
+    margin-right: 8px;
+    font-size: 16px;
+}
+</style>
 </head>
 <body>
 
@@ -36,28 +45,28 @@ function navClass($p, $current) {
     <nav class="sidebar-nav">
         <div class="nav-section">Overview</div>
         <a href="index.php?page=dashboard" class="<?= navClass('dashboard',$page) ?>">
-            &#9632; Dashboard
+            <i class="bi bi-grid-1x2-fill"></i> Dashboard
         </a>
         <div class="nav-section">Property</div>
         <a href="index.php?page=buildings" class="<?= navClass('buildings',$page) ?>">
-            &#9632; Buildings
+            <i class="bi bi-building"></i> Buildings
         </a>
         <a href="index.php?page=rooms" class="<?= navClass('rooms',$page) ?>">
-            &#9632; Rooms
+            <i class="bi bi-door-open"></i> Rooms
         </a>
         <a href="index.php?page=floor_map" class="<?= navClass('floor_map',$page) ?>">
-            &#9632; Floor Map
+            <i class="bi bi-map"></i> Floor Map
         </a>
         <div class="nav-section">Tenants</div>
         <a href="index.php?page=tenants" class="<?= navClass('tenants',$page) ?>">
-            &#9632; Tenants
+            <i class="bi bi-people"></i> Tenants
         </a>
         <a href="index.php?page=leases" class="<?= navClass('leases',$page) ?>">
-            &#9632; Leases
+            <i class="bi bi-file-earmark-text"></i> Leases
         </a>
         <div class="nav-section">Finance</div>
         <a href="index.php?page=payments" class="<?= navClass('payments',$page) ?>">
-            &#9632; Payments
+            <i class="bi bi-credit-card"></i> Payments
         </a>
     </nav>
 </aside>
